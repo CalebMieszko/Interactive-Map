@@ -1,0 +1,37 @@
+body {
+    background-color: transparent;
+}
+
+.text-content {
+    text-align: center;
+}
+
+#business-select-title {
+    font-size: 5rem;
+}
+
+#business-select {
+    font-size: 1.4rem;
+    padding: 2px 5px;
+}
+
+#map {
+    height: 60vh;
+    width: 90%;
+    border: 1px solid black;
+    margin: 5%;
+    background-color: #ccc;
+}
+
+#map::before {
+    content: "LOADING";
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 3em;
+}
+
+.leaflet-popup-content-wrapper {
+    width: 100%;
+}

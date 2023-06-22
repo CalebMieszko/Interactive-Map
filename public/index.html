@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocation Project</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+  </head>
+  <body>
+    <main>
+      <section class="text-content">
+        <h2 id="business-select-title">Browse Local Businesses</h2>
+        <select name="business-type" id="business-select">
+          <option value="">Select one of the following:</option>
+          <option value="coffee">Coffee Shops</option>
+          <option value="restaurant">Restaurants</option>
+          <option value="groceries">Grocery Stores</option>
+          <option value="books">Book Shops</option>
+          <option value="movies">Movie Theatres</option>
+        </select>
+      </section>
+      <section id="map">
+        <script src="./app.js"></script>
+      </section>
+    </main>
+  </body>
+  <!--
+1. Goals
+
+How will you connect your files?
+How will you test that the files are connected properly and loading as expected?
+What events will your application need?
+- What is the user going to need to do?
+- How should the application respond to that?
+What APIs will you need and in what order?
+- Leaflet
+- Foursquare
+    - How do I know which order they should be used in?
+    - Which order do they get called in the typical user workflow... what will the user be doing, and how will that interact with each API?
+    - What API do I connect to in order to prompt the user for their location?
+How will you obtain the user's location?
+    - Good question! I should research this.
+How will you add the user's location to the map?
+    - Answering the question above should get me on the right track, but I can do another search if I need to find more.
+How will you get the selected location from the user?
+    - The drop-down list I created will allow them to choose any kind of place to look for. But... how do I get this as data? A submit button?
+    YES! A submit button will do the trick. I'll only need one, since the dropdown will interface with it directly.
+How will you add that information to the map?
+    - I'll have to interface with an API, and I know Foursquare does things like this. I should check out the documentation, and turn the steps into psuedocode.
+--></html>
